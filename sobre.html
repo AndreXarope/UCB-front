@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sobre — Doce Atacadão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff7f2;
+      --accent:#ff6b6b;
+      --accent-2:#ffb86b;
+      --dark:#2b2b2b;
+      --muted:#6b6b6b;
+      --card:#fff;
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Nunito', system-ui;
+      background: linear-gradient(180deg,var(--bg),#fff5ee);
+      color:var(--dark);
+      line-height:1.45;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header */
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dark)}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-family:'Playfair Display',serif;font-size:20px;box-shadow:0 6px 18px rgba(255,107,107,0.18)}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--dark);text-decoration:none;font-weight:700}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800}
+
+    /* Page */
+    h1{font-family:'Playfair Display',serif;font-size:40px;margin-top:0}
+    .section{margin:32px 0}
+    .card{background:var(--card);padding:18px;border-radius:16px;box-shadow:0 8px 24px rgba(43,43,43,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .highlight{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:white;padding:24px;border-radius:16px;box-shadow:0 10px 30px rgba(43,43,43,0.08)}
+
+    @media(max-width:820px){
+      .grid{grid-template-columns:1fr}
+      h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+   <div class="container">
+    
+    <header>
+      <a class="brand" href="index.html">
+        <img src="fotos/Logo.png" alt="Doce Atacadão" 
+             style="height:70px; width:auto; display:block;">
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="dicas.html">Dicas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="section">
+        <h1>Sobre o Doce Atacadão</h1>
+        <p style="max-width:720px;color:var(--muted)">
+          O <strong>Doce Atacadão</strong> nasceu com a missão de entregar variedade, qualidade e preço justo para
+          quem ama doces e quem trabalha com festas, eventos e revendas. Ao longo dos anos, nos tornamos um dos
+          principais pontos de compra para clientes que buscam tanto o varejo quanto o atacado.
+        </p>
+      </div>
+
+      <div class="section grid">
+        <div class="card">
+          <h2 style="margin-top:0">Nossa História</h2>
+          <p style="color:var(--muted)">Fundado em 2014, o Doce Atacadão nasceu com o propósito de trazer ao varejo uma experiência completa no mundo dos doces e artigos para festa. Desde o início, nossa missão é oferecer variedade, qualidade e os melhores preços, atendendo tanto consumidores finais quanto lojistas que buscam abastecer seus negócios.
+
+Ao longo dos anos, nos tornamos referência pela nossa dedicação em manter um estoque rico e diverso — incluindo desde os doces clássicos que todo mundo ama até produtos exclusivos e difíceis de encontrar, que fazem a diferença em qualquer comemoração.</p>
+          <p style="color:var(--muted)">Nosso objetivo sempre foi unir variedade e economia, mantendo parcerias com marcas renomadas e oferecendo condições especiais para lojistas.</p>
+        </div>
+
+        <div class="highlight">
+          <h2 style="margin-top:0">Valores que nos guiam</h2>
+          <ul style="margin:0;padding-left:18px;line-height:1.7">
+            <li><strong>Qualidade</strong> em todos os produtos que vendemos;</li>
+            <li><strong>Compromisso</strong> com prazos e entregas rápidas;</li>
+            <li><strong>Preço justo</strong> para varejo;</li>
+            <li><strong>Atendimento humano</strong> e especializado;</li>
+            <li><strong>Parceria</strong> com clientes e fornecedores.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section card">
+        <h2 style="margin-top:0">Nossa Estrutura</h2>
+        <p style="color:var(--muted)">Hoje contamos com uma loja ampla, estoque diversificado e setor dedicado ao envio de pedidos para todo o P-Sul. Mantemos equipes de atendimento, logística, conferência e suporte para garantir que sua experiência seja rápida e tranquila.</p>
+        <p style="color:var(--muted)">Além disso, trabalhamos continuamente ampliando nosso catálogo, trazendo novidades em doces, embalagens, descartáveis e artigos de decoração para festas.</p>
+      </div>
+
+      <div class="section highlight" style="text-align:center">
+        <h2 style="margin-top:0">Por que escolher o Doce Atacadão?</h2>
+        <p style="max-width:700px;margin:0 auto;font-size:17px">
+          ✔ Preços competitivos<br>
+          ✔ Grande variedade de produtos<br>
+          ✔ Promoções semanais<br>
+          ✔ Vendas para atacado e varejo<br>
+          ✔ Entrega para todo o P-Sul
+        </p>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="padding:32px 0;color:var(--muted);font-size:14px">
+      <div>© Doce Atacadão — Todos os direitos reservados<br>Desenvolvido por: André Luís e Vinicius Brasil - UCB</div>
+    </footer>
+
+  </div>
+</body>
+</html>

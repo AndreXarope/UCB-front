@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produtos — Doce Atacadão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff7f2;
+      --accent:#ff6b6b;
+      --accent-2:#ffb86b;
+      --dark:#2b2b2b;
+      --muted:#6b6b6b;
+      --card:#fff;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Nunito',system-ui;background:linear-gradient(180deg,var(--bg),#fff5ee);color:var(--dark);line-height:1.45}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dark)}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-family:'Playfair Display',serif;font-size:20px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--dark);text-decoration:none;font-weight:700}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800}
+
+    .hero{display:flex;justify-content:space-between;gap:18px;align-items:center;margin:18px 0}
+    .filters{display:flex;gap:10px;flex-wrap:wrap}
+    .filters select{padding:10px;border-radius:10px;border:1px solid #eee}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:14px;box-shadow:0 8px 24px rgba(43,43,43,0.06);display:flex;flex-direction:column;gap:10px}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+    .price{font-weight:800;color:var(--accent)}
+    .actions{display:flex;justify-content:space-between;align-items:center}
+
+    .pagination{display:flex;gap:8px;justify-content:center;margin:20px 0}
+    .page{padding:8px 12px;border-radius:8px;background:#fff;border:1px solid #eee}
+
+    @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.grid{grid-template-columns:1fr}.hero{flex-direction:column;align-items:stretch}}
+  </style>
+</head>
+<body>
+    <div class="container">
+    
+    <header>
+      <a class="brand" href="index.html">
+        <img src="fotos/Logo.png" alt="Doce Atacadão" 
+             style="height:70px; width:auto; display:block;">
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="dicas.html">Dicas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <div class="hero">
+        <div>
+          <h1 style="margin:0;font-family:'Playfair Display',serif">Catálogo de Produtos</h1>
+          <p style="color:var(--muted);margin:6px 0 0">Veja nossa seleção de doces e artigos para festa. Use os filtros para encontrar o que precisa.</p>
+        </div>
+
+        <div class="filters">
+          <select aria-label="Categoria">
+            <option>Categorias</option>
+            <option>Doces</option>
+            <option>Balas</option>
+            <option>Chocolates</option>
+            <option>Artigos para festa</option>
+          </select>
+          <select aria-label="Ordenar">
+            <option>Ordenar</option>
+            <option>Mais vendidos</option>
+            <option>Preço: menor primeiro</option>
+            <option>Preço: maior primeiro</option>
+          </select>
+          <div style="display:flex;gap:8px"><input placeholder="Buscar..." style="padding:10px;border-radius:10px;border:1px solid #eee"/><button class="cta">Buscar</button></div>
+        </div>
+
+      </div>
+
+      <div class="grid">
+        <!-- Produto 1 -->
+        <article class="card">
+          <img src="fotos/P1.png" alt="Brigadeiro"/>
+          <div>
+            <div style="font-weight:800">Paçoca amendupã</div>
+            <div style="font-size:13px;color:var(--muted)">Pacote de 1kg</div>
+          </div>
+          <div class="actions"><div class="price">R$ 17,99</div><div><a href="#">Ver</a> • <a href="#">Adicionar</a></div></div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="card">
+          <img src="fotos/P2.png" alt="Balas"/>
+          <div>
+            <div style="font-weight:800">Chiclete poosh</div>
+            <div style="font-size:13px;color:var(--muted)">Pacote 200g</div>
+          </div>
+          <div class="actions"><div class="price">R$ 7,99</div><div><a href="#">Ver</a> • <a href="#">Adicionar</a></div></div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="card">
+          <img src="fotos/P3.png" alt="Copos descartáveis"/>
+          <div>
+            <div style="font-weight:800">Sonho de valsa</div>
+            <div style="font-size:13px;color:var(--muted)">Pacote de 1kg</div>
+          </div>
+          <div class="actions"><div class="price">R$ 37,99</div><div><a href="#">Ver</a> • <a href="#">Adicionar</a></div></div>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="card">
+          <img src="fotos/P4.png" alt="Velas"/>
+          <div>
+            <div style="font-weight:800">Chiclete plutonita</div>
+            <div style="font-size:13px;color:var(--muted)">Pacote com 40 unidades</div>
+          </div>
+          <div class="actions"><div class="price">R$ 12,50</div><div><a href="#">Ver</a> • <a href="#">Adicionar</a></div></div>
+        </article>
+
+        <!-- Produto 5 -->
+        <article class="card">
+          <img src="fotos/P5.png" alt="Balões"/>
+          <div>
+            <div style="font-weight:800">Geladinho americano</div>
+            <div style="font-size:13px;color:var(--muted)">Pacote com 40 unidades</div>
+          </div>
+          <div class="actions"><div class="price">R$ 17,99</div><div><a href="#">Ver</a> • <a href="#">Adicionar</a></div></div>
+        </article>
+
+        <!-- Produto 6 -->
+        <article class="card">
+          <img src="fotos/P6.png" alt="Doces embalados"/>
+          <div>
+            <div style="font-weight:800">Chocolate Sicao</div>
+            <div style="font-size:13px;color:var(--muted)">Pacote de 1kg</div>
+          </div>
+          <div class="actions"><div class="price">R$ 85</div><div><a href="#">Ver</a> • <a href="#">Adicionar</a></div></div>
+        </article>
+
+      </div>
+
+      <div class="pagination">
+        <div class="page">«</div>
+        <div class="page">1</div>
+        <div class="page">2</div>
+        <div class="page">3</div>
+        <div class="page">»</div>
+      </div>
+
+    </main>
+
+    <footer style="padding:28px 0;color:var(--muted);font-size:14px">© Doce Atacadão — Todos os direitos reservados<br>Desenvolvido por: André Luís e Vinicius Brasil - UCB</footer>
+  </div>
+</body>
+</html>

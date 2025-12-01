@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Doce Atacadão — Doces e Artigos para Festa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff7f2;
+      --accent:#ff6b6b;
+      --accent-2:#ffb86b;
+      --dark:#2b2b2b;
+      --muted:#6b6b6b;
+      --card:#fff;
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg,var(--bg),#fff5ee);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    /* Layout */
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+
+    /* Header */
+    header{
+      display:flex;align-items:center;justify-content:space-between;padding:12px 0;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dark);
+    }
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-family:'Playfair Display',serif;font-size:20px;box-shadow:0 6px 18px rgba(255,107,107,0.18);
+    }
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;align-items:center}
+    nav a{color:var(--dark);text-decoration:none;font-weight:700}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;box-shadow:0 6px 18px rgba(255,107,107,0.12)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:32px 0}
+    .hero-left h1{font-family:'Playfair Display',serif;font-size:44px;margin:0 0 12px}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .search{
+      display:flex;gap:8px;max-width:520px;background:var(--card);padding:10px;border-radius:12px;box-shadow:0 6px 18px rgba(43,43,43,0.06);
+    }
+    .search input{border:0;outline:0;font-size:16px;padding:8px;flex:1}
+    .search button{background:var(--accent-2);border:0;padding:8px 12px;border-radius:10px;font-weight:700}
+
+    .hero-right{background:linear-gradient(180deg,rgba(255,235,230,0.9),rgba(255,250,245,0.6));padding:18px;border-radius:16px;box-shadow:0 8px 30px rgba(43,43,43,0.06)}
+    .hero-right h3{margin:0 0 8px}
+    .feature-list{display:flex;flex-direction:column;gap:10px}
+    .feature{display:flex;gap:12px;align-items:center}
+    .badge{width:44px;height:44px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+
+    /* Products */
+    .section{padding:28px 0}
+    .section h2{margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:14px;border-radius:14px;box-shadow:0 8px 24px rgba(43,43,43,0.06);display:flex;flex-direction:column;gap:10px}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    .price-row{display:flex;justify-content:space-between;align-items:center}
+    .price{font-weight:800;color:var(--accent)}
+    .tag{background:var(--accent-2);padding:4px 8px;border-radius:8px;font-size:12px}
+
+    /* Promo strip */
+    .promo{margin:18px 0;padding:14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;display:flex;justify-content:space-between;align-items:center}
+
+    /* Footer */
+    footer{padding:28px 0;color:var(--muted);font-size:14px}
+    .footer-grid{display:flex;gap:24px;flex-wrap:wrap}
+    .column{min-width:180px}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:620px){
+      nav ul{display:none}
+      .grid{grid-template-columns:1fr}
+      .logo{width:48px;height:48px;font-size:18px}
+      .hero-left h1{font-size:30px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <a class="brand" href="#">
+        <img src="fotos/Logo.png" alt="Doce Atacadão" 
+             style="height:70px; width:auto; display:block;">
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="dicas.html">Dicas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Doce Atacadão — tudo para sua festa ficar mais doce</h1>
+          <p>varejo de doces, balas, chocolates, enfeites e descartáveis.</p>
+
+          <div class="search" role="search">
+            <input placeholder="Procure por: brigadeiro, balas, copo descartável..." aria-label="Pesquisar produtos" />
+            <button>Buscar</button>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:14px">
+            <div style="background:var(--card);padding:8px;border-radius:10px">📦 Entrega em todo P-Sul</div>
+            <div style="background:var(--card);padding:8px;border-radius:10px">🛒 Todos os seus pedidos estão aqui</div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <h3>Promoções da semana</h3>
+          <div class="feature-list">
+            <div class="feature"><div class="badge">1</div><div><strong>Balas sortidas</strong><div style="font-size:13px;color:var(--muted)">Pacotes com desconto progressivo</div></div></div>
+            <div class="feature"><div class="badge">2</div><div><strong>Copos descartáveis</strong><div style="font-size:13px;color:var(--muted)">Combo festa — economize até 30%</div></div></div>
+            <div class="feature"><div class="badge">3</div><div><strong>Frete grátis</strong><div style="font-size:13px;color:var(--muted)">Acima de R$ 50 em pedidos</div></div></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="produtos" class="section">
+        <h2>Produtos em destaque</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="fotos/P1.png" alt="Paçoca" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:800">Paçoca amendupã</div>
+                <div style="font-size:13px;color:var(--muted)">Pacote de 1kg</div>
+              </div>
+              <div class="tag">Mais vendido</div>
+            </div>
+            <div class="price-row"><div class="price">R$ 17,99</div><a href="#" style="text-decoration:none">Ver</a></div>
+          </article>
+
+          <article class="card">
+            <img src="fotos/P2.png" alt="Balas e pirulitos" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:800">Chiclete poosh</div>
+                <div style="font-size:13px;color:var(--muted)">Pacote 200g</div>
+              </div>
+              <div class="tag">Atacado</div>
+            </div>
+            <div class="price-row"><div class="price">R$ 7,99</div><a href="#">Ver</a></div>
+          </article>
+
+          <article class="card">
+            <img src="fotos/P3.png" alt="sonho de valça" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:800">Sonhos de valsa</div>
+                <div style="font-size:13px;color:var(--muted)">Pacote de 1kg</div>
+              </div>
+              <div class="tag">Novo</div>
+            </div>
+            <div class="price-row"><div class="price">R$ 37,99</div><a href="#">Ver</a></div>
+          </article>
+        </div>
+      </section>
+
+      <div class="promo">
+        <div><strong>Pacote festa completa</strong> — monte sua caixa com desconto especial para lojistas</div>
+        <div style="font-weight:800">Saiba mais →</div>
+      </div>
+
+      <section id="sobre" class="section">
+        <h2>Sobre o Doce Atacadão</h2>
+        <p style="color:var(--muted)">Fundado em 2014, o Doce Atacadão nasceu com o propósito de trazer ao varejo uma experiência completa no mundo dos doces e artigos para festa. Desde o início, nossa missão é oferecer variedade, qualidade e os melhores preços, atendendo tanto consumidores finais quanto lojistas que buscam abastecer seus negócios.</p>
+      </section>
+
+      <section id="contato" class="section">
+        <h2>Fale conosco</h2>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <div style="min-width:260px;background:var(--card);padding:14px;border-radius:12px;box-shadow:0 8px 18px rgba(43,43,43,0.04)">
+            <strong>Endereço</strong>
+            <div style="color:var(--muted)">QNP 16, Conjunto z, Lt 17</div>
+            <strong style="margin-top:8px;display:block">Telefone</strong>
+            <div style="color:var(--muted)">(61) 98135-2015</div>
+            <div style="color:var(--muted)">(61) 3378-5735</div>
+          </div>
+
+          <form style="flex:1;min-width:260px;background:var(--card);padding:14px;border-radius:12px;box-shadow:0 8px 18px rgba(43,43,43,0.04)" onsubmit="event.preventDefault();alert('Formulário enviado (exemplo)')">
+            <label style="display:block;font-weight:700">Seu nome</label>
+            <input style="width:100%;padding:8px;margin:6px 0 12px;border-radius:8px;border:1px solid #eee" required />
+            <label style="display:block;font-weight:700">Email</label>
+            <input type="email" style="width:100%;padding:8px;margin:6px 0 12px;border-radius:8px;border:1px solid #eee" required />
+            <label style="display:block;font-weight:700">Mensagem</label>
+            <textarea style="width:100%;padding:8px;margin:6px 0 12px;border-radius:8px;border:1px solid #eee" rows="3" required></textarea>
+            <button style="background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:10px;font-weight:800">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="column">
+          <div style="font-weight:800">Doce Atacadão</div>
+          <div style="color:var(--muted)">Doces e artigos para festa — atacado e varejo</div>
+        </div>
+        <div class="column">
+          <div style="font-weight:800">Ajuda</div>
+          <div style="color:var(--muted)">FAQ<br/>Política de troca<br/>Prazos de entrega</div>
+        </div>
+        <div class="column">
+          <div style="font-weight:800">Newsletter</div>
+          <div style="color:var(--muted)">Receba promoções e novidades</div>
+          <div style="margin-top:8px"><input placeholder="Seu email" style="padding:8px;border-radius:8px;border:1px solid #eee"/><button style="padding:8px 10px;margin-left:8px;border-radius:8px;background:var(--accent);color:white;border:0">OK</button></div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">© Doce Atacadão — Todos os direitos reservados<br>Desenvolvido por: André Luís e Vinicius Brasil - UCB</div>
+    </footer>
+  </div>
+</body>
+</html>

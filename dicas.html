@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dicas de Festa — Doce Atacadão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff7f2;
+      --accent:#ff6b6b;
+      --accent-2:#ffb86b;
+      --dark:#2b2b2b;
+      --muted:#6b6b6b;
+      --card:#fff;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Nunito',system-ui;background:linear-gradient(180deg,var(--bg),#fff5ee);color:var(--dark);line-height:1.45}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dark)}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-family:'Playfair Display',serif;font-size:20px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--dark);text-decoration:none;font-weight:700}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800}
+
+    .hero{margin:18px 0}
+    .articles{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+    .article{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(43,43,43,0.06)}
+    .article img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+    .article a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.article a:hover {
+  text-decoration: underline;
+}
+
+    .meta{font-size:13px;color:var(--muted);margin-top:8px;text-decoration: none;}
+
+    @media(max-width:900px){.articles{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="container">
+    
+    <header>
+      <a class="brand" href="index.html">
+        <img src="fotos/Logo.png" alt="Doce Atacadão" 
+             style="height:70px; width:auto; display:block;">
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="#">Dicas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <div class="hero">
+        <h1 style="margin:0;font-family:'Playfair Display',serif">Dicas de Festa</h1>
+        <p style="color:var(--muted);margin:6px 0 0">Inspirações, tutoriais e listas de compras para facilitar a organização das suas festas.</p>
+      </div>
+
+      <div class="articles">
+        <article class="article">
+          <a href="https://royalgourmet.com.br/news/dicas/como-fazer-uma-festa-infantil-com-orcamento-reduzido-3/"><img src="fotos/D1.png" alt="Tema infantil"/>
+          <h3>Como montar uma festa infantil com orçamento reduzido</h3>
+          <div class="meta">Publicado em 24 de agosto de 2016</div>
+          <p style="color:var(--muted)">Dicas práticas para economizar com decoração, doces e lembrancinhas sem perder o charme da festa.</p></a>
+        </article>
+
+        <article class="article">
+          <a href="https://bisutti.com.br/doces-de-festa-saiba-a-quantidade-ideal/"><img src="fotos/D2.png" alt="Mesa de doces"/>
+          <h3>Manual completo da mesa de doces de festa: fique por dentro de tudo!</h3>
+          <div class="meta">Publicado em 29 de março de 2020</div>
+          <p style="color:var(--muted)">Uma lista prática com quantidades sugeridas por convidado e opções populares para adultos e crianças.</p></a>
+        </article>
+
+        <article class="article">
+         <a href="https://casaeconstrucao.vivadecora.com.br/decoracao-com-baloes/"> <img src="fotos/d3.png" alt="Balões"/>
+          <h3>Decoração com balões: do básico ao fotogênico</h3>
+          <div class="meta">Publicado em 08 de dezembro de 2024</div>
+          <p style="color:var(--muted)">Ideias para arcos, painéis e arranjos fáceis de montar com itens vendidos na nossa loja.</p></a>
+        </article>
+
+        <article class="article">
+          <a href="https://blog.atacadao.com.br/dicas/como-montar-lembrancinhas-baratas-para-o-dia-das-criancas/"><img src="fotos/D4.png" alt="Kits"/>
+          <h3>Como montar kits de lembrancinha rápido</h3>
+          <div class="meta">Publicado em 15 de outubro de 2025 • 3 min de leitura</div>
+          <p style="color:var(--muted)">Modelos de kits econômicos e elegantes, com passo a passo e sugestões de embalagem.</p></a>
+        </article>
+      </div>
+
+    </main>
+
+    <footer style="padding:28px 0;color:var(--muted);font-size:14px">© Doce Atacadão — Todos os direitos reservados<br>Desenvolvido por: André Luís e Vinicius Brasil - UCB</footer>
+  </div>
+</body>
+</html>
